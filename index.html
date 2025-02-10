@@ -1,47 +1,44 @@
-  
-
----
-
-### **Step 3: Building the Website**
-
-#### **1. `index.html`**
-Create a basic structure for your home page (`index.html`):
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Website</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nezabright</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="js/main.js"></script>
 </head>
-<body>
-  <!-- Header -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">Nezabright</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="text-blue-600 hover:underline"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html" class="text-blue-600 hover:underline"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html" class="text-blue-600 hover:underline"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="contact.html" class="text-blue-600 hover:underline"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+        <section class="text-center">
+            <h1 class="text-4xl font-bold">Welcome to Nezabright</h1>
+            <p class="text-lg text-gray-700 my-4">We provide high-quality services tailored to your needs.</p>
+            <a href="services.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">Learn More</a>
+        </section>
+    </main>
 
-  <!-- Main Content -->
-  <main>
-    <section class="hero">
-      <h1>Welcome to Our Business</h1>
-      <p>We provide high-quality services tailored to your needs.</p>
-      <a href="contact.html" class="btn">Get in Touch</a>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Your Business Name. All rights reserved.</p>
-  </footer>
-
-  <script src="js/script.js"></script>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+        <p><i class="fas fa-copyright"></i> 2025 Nezabright. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+
+

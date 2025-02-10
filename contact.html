@@ -1,1 +1,75 @@
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nezabright</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" defer></script>
+    <script defer src="js/main.js"></script>
+    <style>
+        .contact-section {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">Nezabright</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="text-blue-600 hover:underline">Home</a></li>
+                    <li><a href="about.html" class="text-blue-600 hover:underline">About</a></li>
+                    <li><a href="services.html" class="text-blue-600 hover:underline">Services</a></li>
+                    <li><a href="contact.html" class="text-blue-600 hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg contact-section">
+        <section class="text-center">
+            <h1 class="text-4xl font-bold">Contact Us</h1>
+            <p class="text-lg text-gray-700 my-4">We’d love to hear from you! Get in touch with us using the form below.</p>
+        </section>
+        
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div class="p-6 bg-gray-50 shadow rounded-lg">
+                <h2 class="text-2xl font-semibold">Our Contact Information</h2>
+                <p class="text-gray-700 mt-2"><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i> Kigali, Rwanda</p>
+                <p class="text-gray-700 mt-2"><i class="fas fa-phone text-green-600 mr-2"></i> +250789448107</p>
+                <p class="text-gray-700 mt-2"><i class="fab fa-whatsapp text-green-600 mr-2"></i> <a href="https://wa.me/+250789448107">+250789448107</a></p>
+                <p class="text-gray-700 mt-2"><i class="fas fa-phone text-green-600 mr-2"></i> +250787671556</p>
+                <p class="text-gray-700 mt-2"><i class="fab fa-whatsapp text-green-600 mr-2"></i> <a href="https://wa.me/+250787671556">+250787671556</a></p>
+            </div>
+            <div class="p-6 bg-gray-50 shadow rounded-lg">
+                <h2 class="text-2xl font-semibold">Send Us a Message</h2>
+                <form class="mt-4">
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Your Name</label>
+                        <input type="text" class="w-full p-2 border rounded" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Your Email</label>
+                        <input type="email" class="w-full p-2 border rounded" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Message</label>
+                        <textarea class="w-full p-2 border rounded" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+        <p><i class="fas fa-copyright"></i>2025 Nezabright. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
