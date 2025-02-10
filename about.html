@@ -14,7 +14,12 @@
     <header class="bg-white shadow-md">
         <div class="container mx-auto flex justify-between items-center p-4">
             <h1 class="text-xl font-bold">Nezabright</h1>
-            <nav>
+            <!-- Hamburger Menu for Mobile -->
+            <button id="hamburger-menu" class="lg:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex space-x-4">
                 <ul class="flex space-x-4">
                     <li><a href="index.html" class="text-blue-600 hover:underline"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="about.html" class="text-blue-600 hover:underline"><i class="fas fa-info-circle"></i> About</a></li>
@@ -22,6 +27,20 @@
                     <li><a href="contact.html" class="text-blue-600 hover:underline"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-gray-900 bg-opacity-50 z-50 hidden">
+                <div class="bg-white w-3/4 h-full p-6">
+                    <button id="close-menu" class="text-2xl text-gray-600 float-right">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="mt-10 space-y-6">
+                        <li><a href="index.html" class="text-blue-600 hover:underline"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html" class="text-blue-600 hover:underline"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="services.html" class="text-blue-600 hover:underline"><i class="fas fa-cogs"></i> Services</a></li>
+                        <li><a href="contact.html" class="text-blue-600 hover:underline"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     
@@ -54,5 +73,21 @@
     <footer class="bg-gray-800 text-white text-center p-4 mt-10">
         <p><i class="fas fa-copyright"></i> 2025 Nezabright. All Rights Reserved. </p>
     </footer>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenu = document.getElementById("close-menu");
+
+        hamburgerMenu.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+        });
+    </script>
 </body>
 </html>
+

@@ -14,7 +14,12 @@
     <header class="bg-white shadow-md">
         <div class="container mx-auto flex justify-between items-center p-4">
             <h1 class="text-xl font-bold">Nezabright</h1>
-            <nav>
+            <!-- Hamburger Menu Button -->
+            <button class="lg:hidden p-2 text-blue-600" id="hamburger-menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <!-- Navigation -->
+            <nav class="hidden lg:flex space-x-4">
                 <ul class="flex space-x-4">
                     <li><a href="index.html" class="text-blue-600 hover:underline"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="about.html" class="text-blue-600 hover:underline"><i class="fas fa-info-circle"></i> About</a></li>
@@ -22,6 +27,20 @@
                     <li><a href="contact.html" class="text-blue-600 hover:underline"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
+            <!-- Mobile Menu (hidden by default) -->
+            <div class="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50 hidden" id="mobile-menu">
+                <div class="flex justify-end p-4">
+                    <button class="text-white" id="close-menu">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                <ul class="flex flex-col items-center space-y-4 p-6">
+                    <li><a href="index.html" class="text-white hover:underline"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html" class="text-white hover:underline"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html" class="text-white hover:underline"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="contact.html" class="text-white hover:underline"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     
@@ -115,101 +134,38 @@
                 </div>
                 <div class="p-6 bg-gray-50 shadow rounded-lg">
                     <i class="fas fa-cogs text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">TailwindCSS</h3>
-                    <p class="text-gray-600">Frontend Styling</p>
+                    <h3 class="font-semibold">Automation</h3>
+                    <p class="text-gray-600">Business Process Automation</p>
                 </div>
                 <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-linux text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Linux</h3>
-                    <p class="text-gray-600">Server Management</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-angular text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Angular</h3>
-                    <p class="text-gray-600">Frontend Development</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-vuejs text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Vue.js</h3>
-                    <p class="text-gray-600">Frontend Development</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-python text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Python</h3>
-                    <p class="text-gray-600">Backend Development</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-java text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Java</h3>
-                    <p class="text-gray-600">Backend Development</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fas fa-database text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">MySQL</h3>
-                    <p class="text-gray-600">Database Management</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-postgresql text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">PostgreSQL</h3>
-                    <p class="text-gray-600">Database Management</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-aws text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">AWS</h3>
-                    <p class="text-gray-600">Cloud Computing</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-google-cloud text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Google Cloud</h3>
-                    <p class="text-gray-600">Cloud Computing</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-microsoft text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Azure</h3>
-                    <p class="text-gray-600">Cloud Computing</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-docker text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Docker</h3>
-                    <p class="text-gray-600">Containerization</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-jenkins text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Jenkins</h3>
-                    <p class="text-gray-600">CI/CD Pipeline</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fas fa-tasks text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Jira</h3>
-                    <p class="text-gray-600">Project Management</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-trello text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Trello</h3>
-                    <p class="text-gray-600">Task Management</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-figma text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Figma</h3>
-                    <p class="text-gray-600">Design & Prototyping</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fab fa-sketch text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Sketch</h3>
-                    <p class="text-gray-600">Design Tool</p>
-                </div>
-                <div class="p-6 bg-gray-50 shadow rounded-lg">
-                    <i class="fas fa-pencil-ruler text-4xl text-blue-600 mb-4"></i>
-                    <h3 class="font-semibold">Adobe XD</h3>
-                    <p class="text-gray-600">Design & Prototyping</p>
+                    <i class="fab fa-shopify text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="font-semibold">Shopify</h3>
+                    <p class="text-gray-600">E-commerce Platform</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
-        <p><i class="fas fa-copyright"></i> 2025 Nezabright. All Rights Reserved.</p>
+    <footer class="bg-white shadow-md mt-10">
+        <div class="container mx-auto text-center py-6">
+            <p>&copy; 2025 Nezabright. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenu = document.getElementById("close-menu");
+
+        hamburgerMenu.addEventListener("click", () => {
+            mobileMenu.classList.remove("hidden");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+        });
+    </script>
 </body>
 </html>
